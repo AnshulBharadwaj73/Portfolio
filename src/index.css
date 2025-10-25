@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+/* Prevent text selection highlighting on entire app */
+* {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none; /* Non-prefixed version */
+}
+
+/* Allow text selection only in specific elements where you need it */
+input,
+textarea,
+[contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Optional: Allow selection in specific classes */
+.selectable-text,
+.window-content {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* In your src/index.css or src/App.css */
+html,
+body {
+  overflow-x: scroll;
+  height: 100%;
+}
+
+/* Add this to your global CSS */
