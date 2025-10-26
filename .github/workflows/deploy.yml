@@ -31,6 +31,10 @@ jobs:
           fi
 
       - name: Build
+        # Some CI environments set CI=true which makes create-react-app treat warnings as errors.
+        # Set CI=false here so the workflow matches local builds (where CI is not set).
+        env:
+          CI: false
         run: npm run build
 
       - name: Deploy to GitHub Pages
