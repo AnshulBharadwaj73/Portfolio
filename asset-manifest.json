@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.b2ca2dcf.css",
+    "main.js": "/Portfolio/static/js/main.899d8273.js",
+    "static/js/453.ad7768ec.chunk.js": "/Portfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/sky.mp4": "/Portfolio/static/media/sky.ebdc403710e41a555162.mp4",
+    "static/media/astro.mp4": "/Portfolio/static/media/astro.b1ff12d1d6cfc41fa903.mp4",
+    "static/media/an_img.jpg": "/Portfolio/static/media/an_img.f0a08e0b75bd4fd1c672.jpg",
+    "static/media/matrix.mp4": "/Portfolio/static/media/matrix.1f8e6700a1dde89a87a7.mp4",
+    "static/media/handshake.gif": "/Portfolio/static/media/handshake.852e8d4b4ebf4a7b448e.gif",
+    "static/media/Google Chrome 3D Icon.ico": "/Portfolio/static/media/Google Chrome 3D Icon.cee8149cf6fc9cf5224c.ico",
+    "static/media/email.ico": "/Portfolio/static/media/email.b72bceb07ad14c240112.ico",
+    "static/media/Internet Explorer.ico": "/Portfolio/static/media/Internet Explorer.87319d71915d3ce59301.ico",
+    "static/media/windows-95-landscape-in-real-life-mfbulo12camg5zxy.jpg": "/Portfolio/static/media/windows-95-landscape-in-real-life-mfbulo12camg5zxy.f5bc5329879c44e46207.jpg",
+    "static/media/Paint Waterfall GIF.gif": "/Portfolio/static/media/Paint Waterfall GIF.7328a9e1b2261e98b846.gif",
+    "static/media/Briefcase.ico": "/Portfolio/static/media/Briefcase.61a68a771cb7b6e7a275.ico",
+    "static/media/Gate.ico": "/Portfolio/static/media/Gate.a317b456ebea2867fb6d.ico",
+    "static/media/open_book.ico": "/Portfolio/static/media/open_book.8ce4d461986539e3ceae.ico",
+    "static/media/github.png": "/Portfolio/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/exp.ico": "/Portfolio/static/media/exp.52ab2104bcc12c967775.ico",
+    "static/media/Windows 95 Classic.ico": "/Portfolio/static/media/Windows 95 Classic.c4a3177dd672d0b21c21.ico",
+    "static/media/w-95-sans-serif.woff": "/Portfolio/static/media/w-95-sans-serif.bbf19169756eb315b3d4.woff",
+    "static/media/w-95-sans-serif.woff2": "/Portfolio/static/media/w-95-sans-serif.583c45e970d69c2ab44b.woff2",
+    "static/media/Personal Digital Assistant.ico": "/Portfolio/static/media/Personal Digital Assistant.609a2ae2a2334752f247.ico",
+    "static/media/My Computer.ico": "/Portfolio/static/media/My Computer.4d2bb9d61e228424f9f1.ico",
+    "index.html": "/Portfolio/index.html",
+    "main.b2ca2dcf.css.map": "/Portfolio/static/css/main.b2ca2dcf.css.map",
+    "main.899d8273.js.map": "/Portfolio/static/js/main.899d8273.js.map",
+    "453.ad7768ec.chunk.js.map": "/Portfolio/static/js/453.ad7768ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2ca2dcf.css",
+    "static/js/main.899d8273.js"
+  ]
+}
