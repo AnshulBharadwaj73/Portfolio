@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## CI / CD — GitHub Actions (automatic build & deploy)
+
+This repository includes a GitHub Actions workflow that builds the app and deploys the production output to the `gh-pages` branch when you push to `main`.
+
+Key points:
+
+- Workflow file: `.github/workflows/deploy.yml`
+- It runs `npm install` (or `npm ci` if a lockfile exists) and `npm run build`, then publishes the produced `build/` directory to the `gh-pages` branch using the Actions token.
+
+What you may want to check or customize:
+
+- GitHub Pages: after the first deployment, go to your repository Settings → Pages and set the source to the `gh-pages` branch (or choose the repository Pages option that works for you).
+- Custom domain: if you use a custom domain, place a `CNAME` file under `public/` or on the `gh-pages` branch.
+- Node version: the workflow uses Node.js 18; change it in `.github/workflows/deploy.yml` if you need a different version.
+
+Secrets:
+
+- No extra secrets are required; the workflow uses the automatically-provided `GITHUB_TOKEN` to push the build to `gh-pages`.
+
+Triggering deployments:
+
+- Any push to `main` will trigger the workflow and (if the build succeeds) publish to `gh-pages`.
+
+If you'd like a different target (Netlify / Vercel / Surge), I can update the workflow to publish to those services instead — tell me which one you prefer.
