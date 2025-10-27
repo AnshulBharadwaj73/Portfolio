@@ -48,7 +48,7 @@ export default function MainPage() {
 
   return (
     <>
-      <div className="flex relative min-h-screen">
+      <div className="flex w-screen overflow-hidden relative min-h-screen">
         <img
           className="h-full w-full object-cover fixed top-0"
           src={bag}
@@ -61,7 +61,19 @@ export default function MainPage() {
             className="w-44 h-44 fixed left-[45rem] top-[345px] -translate-x-1/2 -translate-y-1/2"
             alt="Windows 95"
           />
-
+          <div className="z-10 h-20 place-content-center grid grid-cols-[235px] mb-6">
+            <div className="flex items-center justify-center space-x-1">
+              <span className="w-60 fixed  h-10 font-ligt text-white font-thin font-sans left-[615px] top-[420px] text-xl ">
+                Microsoft
+              </span>
+            </div>
+            <div className="flex items-center justify-center space-x-1">
+              <span className="w-60 h-10 font-extrabold font-sans fixed left-[615px] top-[439px] text-3xl ">
+                Windows
+                <span className="text-white italic font-light">95</span>
+              </span>
+            </div>
+          </div>
           {/* <div>
             <span className="font-extrabold">Microsoft</span>
             <span className="w-60 h-10 font-extrabold font-sans fixed left-[46rem] bottom-[345px] text-3xl -translate-x-1/2 -translate-y-1/2">
@@ -69,19 +81,6 @@ export default function MainPage() {
               <span className="text-white italic font-light">95</span>
             </span>
           </div>*/}
-        </div>
-        <div className="z-10  grid grid-cols-[235px] mb-6">
-          <div className="flex items-baseline justify-center space-x-1">
-            <span className="w-60 h-10 font-ligt text-white font-thin font-sans fixed left-[46rem] bottom-[325px] text-xl -translate-x-1/2 -translate-y-1/2">
-              Microsoft
-            </span>
-          </div>
-          <div className="flex items-baseline justify-center space-x-1">
-            <span className="w-60 h-10 font-extrabold font-sans fixed left-[46rem] bottom-[300px] text-3xl -translate-x-1/2 -translate-y-1/2">
-              Windows
-              <span className="text-white italic font-light">95</span>
-            </span>
-          </div>
         </div>
       </div>
 

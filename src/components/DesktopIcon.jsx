@@ -25,9 +25,11 @@ export default function DesktopIcon({ icon, label, onClick }) {
       <div className="w-24 h-24 flex items-center justify-center group-hover:bg-white/20 p-1 rounded">
         <img src={icon} alt={label} className="w-20 h-20" />
       </div>
-      <span className="text-black font-bold mt-2 text-sm text-center bg-transparent px-1 group-hover:bg-white-600">
-        {label}
-      </span>
+      <div className="h-7 w-36 flex items-center justify-center">
+        <span className="text-black m-2 p-1 w-full bg-white/30 font-bold mt-2 text-sm text-center bg-transparent px-1 group-hover:bg-white-600">
+          {label}
+        </span>
+      </div>
     </div>
   );
 }
