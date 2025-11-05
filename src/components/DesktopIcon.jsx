@@ -19,14 +19,18 @@ import React from "react";
 export default function DesktopIcon({ icon, label, onClick }) {
   return (
     <div
-      className="flex flex-col items-center relative top-5 w-32 cursor-pointer group"
+      className=" flex flex-col items-center relative top-5 w-32 cursor-pointer group"
       onClick={onClick}
     >
-      <div className="w-24 h-24 flex items-center justify-center group-hover:bg-white/20 p-1 rounded">
-        <img src={icon} alt={label} className="w-20 h-20" />
+      <div className="mobile-lg:w-16 mobile-lg:h-116 w-24 h-24 flex items-center justify-center group-hover:bg-white/20 p-1 rounded">
+        <img
+          src={icon}
+          alt={label}
+          className="mobile-lg:w-16 mobile-lg:h-16 w-20 h-20"
+        />
       </div>
-      <div className="h-7 w-36 flex items-center justify-center">
-        <span className="text-black m-2 p-1 w-full bg-white/30 font-bold mt-2 text-sm text-center bg-transparent px-1 group-hover:bg-white-600">
+      <div className=" flex items-center justify-center">
+        <span className="mobile-lg:text-xm text-black m-2 p-1 w-full bg-white/30 font-bold mt-2 text-sm text-center px-1 group-hover:bg-white-600">
           {label}
         </span>
       </div>

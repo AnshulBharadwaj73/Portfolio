@@ -27,29 +27,33 @@ export default function Project() {
   };
 
   return (
-    <div className="relative w-[750px] h-[450px]  overflow-hidden">
+    <div className="mobile-lg:w-80 mobile-lg:h-[550px] relative w-[750px] h-[450px] overflow-hidden">
       <video
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-[750px] h-[450px] object-cover"
+        className="mobile-lg:w-80 mobile-lg:h-[550px] absolute top-0 left-0 w-[750px] h-[450px] object-cover"
       >
-        <source src={Astro} type="video/mp4" />
+        <source
+          className="mobile-lg:w-68 mobile-lg:h-96"
+          src={Astro}
+          type="video/mp4"
+        />
       </video>
-      <div className="absolute sm:top-8 top-3 m-2 h-[370px] sm:m-0 sm:left-2 border-t-2 border-l-2 border-gray-500 border-b-2 border-r-2 border-b-gray-200 border-r-gray-200 bg-[#e6ece8] p-2">
-        <div className="mb-2">
-          |--
+      <div className="mobile-lg:w-72 mobile-lg:left-3 mobile-lg:h-14 mobile-lg:flex mobile-lg:flex-row mobile-lg:text-xs absolute sm:top-8 top-3 m-2 h-[370px] sm:m-0 sm:left-2 border-t-2 border-l-2 border-gray-500 border-b-2 border-r-2 border-b-gray-200 border-r-gray-200 bg-[#e6ece8] p-2">
+        <div className="mobile-lg:basis-[20vw] mb-2">
+          <span className="mobile-lg:hidden">|--</span>
           <button
             data-tooltip-id="my-Linkedin-tooltip"
             data-tooltip-content="LinkedIn Backend Service Project"
-            className="cursor-pointer ml-1"
+            className="mobile-lg: cursor-pointer ml-1"
             onClick={() => openProjectWindow("LinkedIn")}
           >
             LinkedIn Ser...
           </button>
         </div>
-        <div className="mb-2">
-          |--
+        <div className="mobile-lg:basis-[14vw] mb-2">
+          <span className="mobile-lg:hidden">|--</span>
           <button
             data-tooltip-id="my-Uber-tooltip"
             data-tooltip-content="Ride Sharing Backend Service Project"
@@ -59,8 +63,8 @@ export default function Project() {
             Uber
           </button>
         </div>
-        <div className="mb-2">
-          |--
+        <div className="mobile-lg:basis-[14vw] mb-2">
+          <span className="mobile-lg:hidden">|--</span>
           <button
             data-tooltip-id="my-Zomato-tooltip"
             data-tooltip-content="Food Delivery Backend Service Project"
@@ -70,8 +74,8 @@ export default function Project() {
             Zomato
           </button>
         </div>
-        <div className="mb-2">
-          |--
+        <div className="mobile-lg:basis-[20vw] mb-2">
+          <span className="mobile-lg:hidden">|--</span>
           <button
             data-tooltip-id="my-Courier-tooltip"
             data-tooltip-content="Fullstack Courier Backend Service Project"
@@ -148,8 +152,8 @@ export default function Project() {
         </div>
       </div> */}
       {isOpenWindow && (
-        <div className="relative">
-          <div className="absolute top-8 pl-2 font-serif left-[225px] h-96 w-[490px] z-40 overflow-y-auto bg-white/20 backdrop-blur-md border border-white/20 rounded-lg">
+        <div className=" relative">
+          <div className="mobile-lg:w-72 mobile-lg:h-[450px] mobile-lg:left-5 mobile-lg:top-20 absolute top-8 pl-2 font-serif left-[225px] h-96 w-[490px] z-40 overflow-y-auto bg-white/20 backdrop-blur-md border border-white/20 rounded-lg">
             {/* Single < shape */}
             <div className="absolute -left-4 top-5 transform -translate-y-1/2 ">
               <div className="w-6 h-6 border-l-2 border-t-2 border-white transform -rotate-45 "></div>
@@ -161,7 +165,7 @@ export default function Project() {
               ✕
             </button>
 
-            <span className="text-white font-semibold drop-shadow-lg">
+            <span className="mobile-lg:left text-white font-semibold drop-shadow-lg">
               {projectDiscriptions[activeProject]}
             </span>
           </div>

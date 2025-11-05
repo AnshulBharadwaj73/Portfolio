@@ -142,7 +142,7 @@ export default function Footer({ onAppClick }) {
               📺 Start
             </button>
 
-            <div className="relative" ref={searchRef}>
+            <div className="mobile-lg:hidden relative" ref={searchRef}>
               <input
                 type="text"
                 placeholder="Search programs..."
@@ -181,7 +181,7 @@ export default function Footer({ onAppClick }) {
               )}
             </div>
 
-            <div>
+            <div className="mobile-lg:hidden">
               <a
                 href="https://www.google.com/"
                 target="_blank"
@@ -194,7 +194,7 @@ export default function Footer({ onAppClick }) {
                 />
               </a>
             </div>
-            <div>
+            <div className="mobile-lg:hidden">
               <a href="#" className="hover:scale-110 transition-transform">
                 <img className="h-7 w-7" src={IE} alt="Internet Explorer" />
               </a>

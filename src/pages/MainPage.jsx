@@ -48,9 +48,9 @@ export default function MainPage() {
 
   return (
     <>
-      <div className="flex w-screen overflow-hidden relative min-h-screen">
+      <div className="mobile-lg:w-[430px] mobile-lg:h-[932px] flex w-screen overflow-hidden relative min-h-screen">
         <img
-          className="h-full w-full object-cover fixed top-0"
+          className="mobile-lg:w-[430px] mobile-lg:h-[932px] h-full w-full object-cover fixed top-0"
           src={bag}
           alt="Windows 95 background"
         />
@@ -58,17 +58,17 @@ export default function MainPage() {
         <div className="flex items-center justify-center min-h-screen w-full z-10">
           <img
             src={Windows}
-            className="w-44 h-44 fixed left-[45rem] top-[345px] -translate-x-1/2 -translate-y-1/2"
+            className="mobile-lg:left-52 mobile-lg:w-24 mobile-lg:h-24 mobile-lg:top-[500px] w-44 h-44 fixed left-[45rem] top-[345px] -translate-x-1/2 -translate-y-1/2"
             alt="Windows 95"
           />
           <div className="z-10 h-20 place-content-center grid grid-cols-[235px] mb-6">
             <div className="flex items-center justify-center space-x-1">
-              <span className="w-60 fixed  h-10 font-ligt text-white font-thin font-sans left-[615px] top-[420px] text-xl ">
+              <span className=" mobile-lg:left-36 mobile-lg:top-[525px] mobile-lg:w-24 mobile-lg:h-24 w-60 fixed  h-10 font-ligt text-white font-thin font-sans left-[615px] top-[420px] text-xl ">
                 Microsoft
               </span>
             </div>
             <div className="flex items-center justify-center space-x-1">
-              <span className="w-60 h-10 font-extrabold font-sans fixed left-[615px] top-[439px] text-3xl ">
+              <span className="mobile-lg:left-36 mobile-lg:top-[540px] mobile-lg:w-24 mobile-lg:h-24 w-60 h-10 font-extrabold font-sans fixed left-[615px] top-[439px] text-3xl ">
                 Windows
                 <span className="text-white italic font-light">95</span>
               </span>
@@ -85,7 +85,7 @@ export default function MainPage() {
       </div>
 
       {/* Desktop Icons */}
-      <div className="absolute top-4 left-4 grid grid-cols-1 sm:grid-cols-2 gap-6 z-10">
+      <div className=" absolute top-4 left-4 grid  mobile-lg:grid-cols-2 mobile-lg:gap-2 laptop:grid-cols-2 gap-6 z-10">
         <DesktopIcon
           onClick={() => openWindow("education")}
           icon={MyComputer}

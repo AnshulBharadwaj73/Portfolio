@@ -21,7 +21,7 @@ const Window = ({ title, children, onClose }) => {
   return (
     <motion.div
       ref={ref}
-      className="absolute min-w-80 -top-28 select-none z-50 h-full"
+      className=" absolute min-w-80 -top-28 select-none z-50 h-full"
       drag
       dragConstraints={{ top: 0, left: 0 }}
       initial={{ opacity: 0, scale: 0.8 }}
@@ -38,7 +38,7 @@ const Window = ({ title, children, onClose }) => {
         </div>
 
         {/* Inner Content */}
-        <div className=" overflow-y-auto text-lg text-black font-retro border border-gray-400 bg-white">
+        <div className="overflow-y-auto text-lg text-black font-retro border border-gray-400 bg-white">
           {children}
         </div>
       </div>
