@@ -18,7 +18,7 @@ module.exports = {
 
       desktop: "1657px",
       // => @media (min-width: 1280px) { ... }
-      sm: "640px",
+      sm: "425px",
       // => @media (min-width: 640px) { ... }
 
       md: "768px",
