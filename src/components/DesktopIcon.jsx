@@ -22,7 +22,7 @@ export default function DesktopIcon({ icon, label, onClick }) {
       className=" flex flex-col items-center relative top-5 w-32 cursor-pointer group"
       onClick={onClick}
     >
-      <div className="mobile-lg:w-16 mobile-lg:h-116 w-24 h-24 flex items-center justify-center group-hover:bg-white/20 p-1 rounded">
+      <div className="sm:w-16 sm:h-116 w-24 h-24 flex items-center justify-center group-hover:bg-white/20 p-1 rounded">
         <img
           src={icon}
           alt={label}
@@ -30,7 +30,7 @@ export default function DesktopIcon({ icon, label, onClick }) {
         />
       </div>
       <div className=" flex items-center justify-center">
-        <span className="mobile-lg:text-xm text-black m-2 p-1 w-full bg-white/30 font-bold mt-2 text-sm text-center px-1 group-hover:bg-white-600">
+        <span className="sm:text-xm text-black m-2 p-1 w-full bg-white/30 font-bold mt-2 text-sm text-center px-1 group-hover:bg-white-600">
           {label}
         </span>
       </div>
