@@ -16,11 +16,12 @@ export default function Experience() {
   };
 
   const year2024 = {
-    Company: "Your Current Company",
-    Role: "Your Current Role",
+    Company: "Freelance Developer",
+    Role: "Full Stack Developer",
     Duration: "2024-Present",
-    Description: "Your current role description goes here...",
-    TechStack: ["React", "Node.js", "TypeScript", "MongoDB"],
+    Description:
+      "Working as a Freelance Developer, I have been involved in various projects that require end-to-end development solutions. My responsibilities include designing user interfaces, developing backend services, and ensuring seamless integration between front-end and back-end components. I collaborate closely with clients to understand their requirements and deliver tailored solutions that meet their business needs. This role has enhanced my skills in full-stack development and client communication.",
+    TechStack: ["Java", "SpringBoot", "React", "MySQL", "AWS"],
   };
 
   const year202122 = {
@@ -103,7 +104,7 @@ export default function Experience() {
 
       {/* Content Window - Conditionally Rendered */}
       {isWindowOpen && activeData && (
-        <div className="absolute sm:top-8 top-3 m-2 sm:m-0 sm:left-20 sm:bg-white/80 flex border-t-2 border-l-2 border-gray-500 border-b-2 border-r-2 border-b-gray-200 border-r-gray-200 bg-white p-2 z-50">
+        <div className="absolute sm:top-8 top-3 m-2 sm:m-0 left-16 sm:bg-white/80 flex border-t-2 border-l-2 border-gray-500 border-b-2 border-r-2 border-b-gray-200 border-r-gray-200 bg-white p-2 z-50">
           <div className="w-[600px] h-[270px] bg-slate-200 p-4 overflow-y-auto">
             {/* Close Button */}
             <button

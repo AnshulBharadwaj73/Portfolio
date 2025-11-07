@@ -48,9 +48,9 @@ export default function MainPage() {
 
   return (
     <>
-      <div className="sm:w-[430px] sm:h-[932px] flex w-screen overflow-hidden relative min-h-screen">
+      <div className="sm:h-[780px] sm:w-[700px] flex h-screen w-screen overflow-hidden relative min-h-screen">
         <img
-          className="sm:w-[430px] sm:h-[932px] h-full w-full object-cover fixed top-0"
+          className="sm:w-full sm:h-full h-full w-full object-cover fixed top-0"
           src={bag}
           alt="Windows 95 background"
         />

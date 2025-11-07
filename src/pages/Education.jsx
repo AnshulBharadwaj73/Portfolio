@@ -5,7 +5,7 @@ import Paint from "../asset/Paint Waterfall GIF.gif";
 export default function Education() {
   return (
     <>
-      <div className="sm:w-[320px] sm:h-[560px] text-sm sm:text-lg font-bold w-[700px] h-[600px] flex flex-col relative ">
+      <div className="sm:w-[320px] sm:h-[555px] text-sm sm:text-lg font-bold w-[700px] h-[600px] flex flex-col relative ">
         <div className="  h-[600px] w-full relative ">
           <img
             src={Paint}
@@ -16,7 +16,7 @@ export default function Education() {
             src={StudyRoom}
             className="sm:h-[415px] sm:w-[640px] h-full w-full absolute sm:top-10 sm:right-10"
           ></img> */}
-          <div className="sm:w-64 sm:h-[400px] sm:text-sm sm:left-10 sm:top-0 h-[390px] w-[500px] left-24 absolute  top-5 m-2 sm:m-0 sm:bg-white/80 flex  border-t-2 border-l-2 border-gray-500 border-b-2 border-r-2 border-b-gray-200 border-r-gray-200 bg-white  p-2">
+          <div className="sm:w-64 sm:h-[300px] sm:text-sm sm:left-12 sm:top-5 h-[390px] w-[500px] left-24 absolute  top-5 m-2 sm:m-0 sm:bg-white/80 flex  border-t-2 border-l-2 border-gray-500 border-b-2 border-r-2 border-b-gray-200 border-r-gray-200 bg-white  p-2">
             <ul>
               <li className="text-3xl sm:text-xl">Education</li>
               <li className=" sm:hidden">
@@ -44,8 +44,9 @@ export default function Education() {
             </ul>
           </div>
           <a
-            href="/resume/Resume.pdf"
+            href="/resume/Anshul_Bharadwaj_Resume.pdf"
             target="_blank"
+            download="Anshul_Bharadwaj_Resume.pdf"
             rel="noopener noreferrer"
             className="absolute sm:bottom-16 sm:text-base sm:right-5 sm:w-24 bottom-[70px] h-8 right-9 w-32 hover:bg-blue-400 text-sm sm:text-2xl flex justify-center items-center border-t-2 border-l-2 border-gray-200 border-b-2 border-r-2 border-b-gray-500 border-r-gray-500 bg-blue-600 text-white cursor-pointer shadow-md"
           >

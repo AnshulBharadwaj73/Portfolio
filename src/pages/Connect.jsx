@@ -7,11 +7,11 @@ import Email from "../asset/email.ico";
 export default function Connect() {
   return (
     <>
-      <div className="max-w-[1000px] p-3 overflow-y-auto max-h-[800px] w-[900px] text-black flex flex-col relative px-5 pt-3 sm:gap-4">
-        <div className="flex flex-col justify-center items-center sm:flex-row font-bold gap-2 relative">
+      <div className="sm:h-[500px] sm:w-[350px] sm:grid sm:grid-cols-1 max-w-[1000px] p-3 overflow-y-auto max-h-[800px] w-[900px] text-black flex flex-col relative px-5 pt-3 sm:gap-4">
+        <div className="sm:grid sm:grid-cols-1 flex flex-col justify-center items-center sm:flex-row font-bold gap-2 relative">
           <img
             src={hand}
-            className="h-32 w-32  sm:h-60 sm:w-44 border-t-2 border-l-2 border-gray-200 border-b-2 border-r-2 border-b-gray-500 border-r-gray-500 bg-white shadow-md"
+            className="h-32 w-32  sm:hidden border-t-2 border-l-2 border-gray-200 border-b-2 border-r-2 border-b-gray-500 border-r-gray-500 bg-white shadow-md"
           ></img>
 
           <div className="flex flex-col p-4 text-xs sm:text-lg border-t-2 border-l-2 border-gray-200 border-b-2 border-r-2 border-b-gray-500 border-r-gray-500 bg-white shadow-md">

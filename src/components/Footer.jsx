@@ -135,11 +135,11 @@ export default function Footer({ onAppClick }) {
   return (
     <footer className="fixed z-50 bottom-0 left-0 w-[100%]">
       <div className="bg-[#c0c0c0] border-t-2 border-t-white border-l-2 border-l-white border-b-2 border-b-gray-500 border-r-2 border-r-gray-500">
-        <div className="w-full flex justify-between items-center px-4 py-1">
+        <div className="w-full sm:h-7 flex justify-between items-center px-4 py-1">
           {/* Left Section */}
-          <div className="flex items-center space-x-4">
-            <button className="text-black px-3 py-1 bg-[#c0c0c0] border-t-2 border-t-white border-l-2 border-l-white border-b-2 border-b-gray-500 border-r-2 border-r-gray-500 hover:bg-gray-300">
-              📺 Start
+          <div className="sm:h-7 flex items-center space-x-4">
+            <button className="sm:h-6 sm:text-center sm:text-sm sm:flex sm:items-center sm:justify-center text-black px-3 py-1 bg-[#c0c0c0] border-t-2 border-t-white border-l-2 border-l-white border-b-2 border-b-gray-500 border-r-2 border-r-gray-500 hover:bg-gray-300">
+              Start
             </button>
 
             <div className="sm:hidden relative" ref={searchRef}>
@@ -211,7 +211,11 @@ export default function Footer({ onAppClick }) {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img className="w-7 h-7" src={Github} alt="GitHub" />
+                <img
+                  className="sm:w-5 sm:h-5 w-7 h-7"
+                  src={Github}
+                  alt="GitHub"
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/anshul-bharadwaj-80486119b/"
@@ -219,14 +223,22 @@ export default function Footer({ onAppClick }) {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img className="w-7 h-7" src={Linkedin} alt="LinkedIn" />
+                <img
+                  className="sm:w-5 sm:h-5 w-7 h-7"
+                  src={Linkedin}
+                  alt="LinkedIn"
+                />
               </a>
             </div>
 
             {/* Date and Time */}
-            <div className="flex items-center space-x-3 text-sm font-bold flex-none min-w-[140px]">
-              <span className="flex-1 text-right">{todayDate}</span>
-              <span className="flex-1 text-left pl-2">{currentTime}</span>
+            <div className="flex items-center space-x-3 text-sm font-bold sm:flex-row sm:space-x-0 sm:space-y-0 sm:min-w-[100px] min-w-[140px]">
+              <span className="text-right sm:mr-2 sm:text-center">
+                {todayDate}
+              </span>
+              <span className="text-left sm:text-center pl-2 sm:pl-0">
+                {currentTime}
+              </span>
             </div>
           </div>
         </div>

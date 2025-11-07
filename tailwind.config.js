@@ -13,7 +13,7 @@ module.exports = {
 
       desktop: "1657px",
       // => @media (min-width: 1280px) { ... }
-      sm: { max: "640px" },
+      sm: { max: "430px" },
       // => @media (min-width: 640px) { ... }
 
       md: "768px",

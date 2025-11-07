@@ -32,6 +32,9 @@ export default function Project() {
         autoPlay
         loop
         muted
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
+        playsInline
         className="sm:w-80 sm:h-[550px] absolute top-0 left-0 w-[750px] h-[450px] object-cover"
       >
         <source className="sm:w-68 sm:h-96" src={Astro} type="video/mp4" />

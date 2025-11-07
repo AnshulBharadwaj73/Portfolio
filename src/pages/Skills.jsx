@@ -23,7 +23,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="relative w-[700px] h-[400px]  overflow-hidden">
+    <div className="sm:w-[320px] sm:h-[560px] relative w-[700px] h-[400px]  overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -35,31 +35,35 @@ export default function Skills() {
       </video>
 
       {/* Floating Action Button */}
-      <button
-        onClick={() => openSkillWindow("frontend")}
-        className="fixed top-72 right-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
-      >
-        <span className="text-2xl">Frontend</span>
-      </button>
+      <div className="sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-4 sm:py-4 relative">
+        <button
+          onClick={() => openSkillWindow("frontend")}
+          className="sm:relative sm:w-24 sm:h-12 absolute top-72 right-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
+        >
+          <span className="text-2xl sm:text-xs">Frontend</span>
+        </button>
 
-      <button
-        onClick={() => openSkillWindow("backend")}
-        className="fixed  top-24 right-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
-      >
-        <span className="text-2xl">Backend</span>
-      </button>
-      <button
-        onClick={() => openSkillWindow("tools")}
-        className="fixed top-24 left-7  bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
-      >
-        <span className="text-2xl">Tools</span>
-      </button>
-      <button
-        onClick={() => openSkillWindow("database")}
-        className="fixed top-72 left-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
-      >
-        <span className="text-2xl">Database</span>
-      </button>
+        <button
+          onClick={() => openSkillWindow("backend")}
+          className="sm:relative sm:w-24 sm:h-12 absolute top-24 right-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
+        >
+          <span className="text-2xl sm:text-xs">Backend</span>
+        </button>
+
+        <button
+          onClick={() => openSkillWindow("tools")}
+          className="sm:relative sm:w-24 sm:h-12 absolute top-24 left-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
+        >
+          <span className="text-2xl sm:text-xs">Tools</span>
+        </button>
+
+        <button
+          onClick={() => openSkillWindow("database")}
+          className="sm:relative sm:w-24 sm:h-12 absolute top-72 left-7 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-2xl hover:scale-110 transform transition-all duration-300 z-40 border-2 border-white/30"
+        >
+          <span className="text-2xl sm:text-xs">Database</span>
+        </button>
+      </div>
 
       {/* Window */}
       {isWindowOpen && (
