@@ -61,7 +61,7 @@ export default function Footer({ onAppClick }) {
     };
 
     updateTime();
-    const intervalId = setInterval(updateTime, 100000);
+    const intervalId = setInterval(updateTime, 60000);
     return () => clearInterval(intervalId);
   }, []);
 

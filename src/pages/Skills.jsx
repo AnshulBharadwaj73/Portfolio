@@ -10,8 +10,8 @@ export default function Skills() {
   const [activeSkill, setActiveSkill] = useState("");
 
   const skillsMap = {
-    frontend: ["React", "Next.js", "Tailwind", "Framer Motion"],
-    backend: ["Java", "SpringBoot", "Node.js", "Firebase"],
+    frontend: ["React", "HTML", "Tailwind CSS", "Framer Motion"],
+    backend: ["Java", "SpringBoot", "JavaScript", "Firebase"],
     tools: ["Git", "VSCode", "Jenkins", "Postman"],
     database: ["PostgreSQL", "MongoDB", "ElasticSearch", "Neo4J"],
     unknown: ["🤖 Just clicked something random!"],

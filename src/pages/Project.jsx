@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import Astro from "../asset/videos/astro.mp4";
 import { Tooltip } from "react-tooltip";
+import Github from "../asset/github.png";
 
 export default function Project() {
   const [isOpenWindow, setIsWindowOpen] = useState(false);
   const [activeProject, setActiveProject] = useState("");
+  const [acticeLink, setActiveLink] = useState("");
 
   const openProjectWindow = (project) => {
     setActiveProject(project);
+    setActiveLink(project);
     setIsWindowOpen(true);
   };
 
@@ -24,6 +27,13 @@ export default function Project() {
       "This project entails developing a backend service for a food delivery platform akin to Zomato. Utilizing Java and SpringBoot, the service handles restaurant listings, menu management, order processing, and user reviews. MongoDb and PostgreSQL are employed for data storage, facilitating efficient management of restaurant, menu, and order information. Key features include RESTful API endpoints for browsing restaurants, placing orders, processing payments, and submitting reviews. The project also incorporates authentication and authorization mechanisms to ensure secure user access.",
     Courier:
       "This project involves building a full-stack backend service for a courier delivery application. The backend is developed using Java and SpringBoot, while the frontend is created with Thymleaf to provide a seamless user interface. MySQL are used for data storage, managing user profiles, delivery requests, and tracking information. Key features include RESTful API endpoints for booking deliveries, tracking packages, processing payments, and managing user accounts. The frontend integrates with the backend APIs to offer real-time updates and notifications, enhancing the overall user experience.",
+  };
+
+  const projectLinks = {
+    LinkedIn: "https://github.com/AnshulBharadwaj73/LinkedIn-Backend",
+    Uber: "https://github.com/AnshulBharadwaj73/uber-clone",
+    Zomato: "https://github.com/AnshulBharadwaj73/zomato-backend",
+    Courier: "https://github.com/AnshulBharadwaj73/CloudDevops",
   };
 
   return (
@@ -152,20 +162,32 @@ export default function Project() {
       </div> */}
       {isOpenWindow && (
         <div className=" relative">
-          <div className="sm:w-72 sm:h-[450px] sm:left-5 sm:top-20 absolute top-8 pl-2 font-serif left-[225px] h-96 w-[490px] z-40 overflow-y-auto bg-white/20 backdrop-blur-md border border-white/20 rounded-lg">
+          <div className="sm:w-72 sm:h-[450px] sm:left-5 sm:top-20 absolute top-6 pl-2 font-serif left-[225px] h-96 w-[490px] z-40 overflow-y-auto bg-white/20 backdrop-blur-md border border-white/20 rounded-lg">
             {/* Single < shape */}
             <div className="absolute -left-4 top-5 transform -translate-y-1/2 ">
               <div className="w-6 h-6 border-l-2 border-t-2 border-white transform -rotate-45 "></div>
             </div>
             <button
               onClick={closeWindow}
-              className="absolute top-2 right-2 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-sm hover:bg-red-600"
+              className="absolute hover:z-10 hover:bg-red-600  top-2 right-2 w-6 h-6 bg-red-400 text-white rounded-full flex items-center justify-center text-sm "
             >
               ✕
             </button>
 
             <span className="sm:left text-white font-semibold drop-shadow-lg">
               {projectDiscriptions[activeProject]}
+              <a
+                href={projectLinks[acticeLink]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img
+                  className="sm:w-5 sm:h-5 w-7 h-7 bg-white/80"
+                  src={Github}
+                  alt="GitHub"
+                />
+              </a>
             </span>
           </div>
         </div>
