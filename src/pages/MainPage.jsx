@@ -52,29 +52,27 @@ export default function MainPage() {
     <>
       {!booted && <Loading onFinish={() => setBooted(true)} />}
       {booted && (
-        <div className="relative h-screen w-screen overflow-hidden">
-          {/* Background Image */}
+        <div className="sm:h-[780px] sm:w-[700px] flex h-screen w-screen overflow-hidden relative min-h-screen">
           <img
-            className="h-full w-full object-cover fixed top-0 left-0"
+            className="sm:w-full sm:h-full h-full w-full object-cover fixed top-0"
             src={bag}
             alt="Windows 95 background"
           />
 
-          {/* Windows Logo */}
-          <div className="flex items-center justify-center min-h-screen w-full z-10 relative">
+          <div className="flex items-center justify-center min-h-screen w-full z-10">
             <img
               src={Windows}
               className="sm:left-52 sm:w-24 sm:h-24 sm:top-[500px] w-44 h-44 fixed left-[45rem] top-[345px] -translate-x-1/2 -translate-y-1/2"
               alt="Windows 95"
             />
-            <div className="z-20 h-20 place-content-center grid grid-cols-[235px] mb-6">
+            <div className="z-10 h-20 place-content-center grid grid-cols-[235px] mb-6">
               <div className="flex items-center justify-center space-x-1">
-                <span className="sm:left-36 sm:top-[525px] sm:w-24 sm:h-24 w-60 fixed h-10 font-light text-white font-thin font-sans left-[615px] top-[420px] text-xl">
+                <span className=" sm:left-36 sm:top-[525px] sm:w-24 sm:h-24 w-60 fixed  h-10 font-ligt text-white font-thin font-sans left-[615px] top-[420px] text-xl ">
                   Microsoft
                 </span>
               </div>
               <div className="flex items-center justify-center space-x-1">
-                <span className="sm:left-36 sm:top-[540px] sm:w-24 sm:h-24 w-60 h-10 font-extrabold font-sans fixed left-[615px] top-[439px] text-3xl">
+                <span className="sm:left-36 sm:top-[540px] sm:w-24 sm:h-24 w-60 h-10 font-extrabold font-sans fixed left-[615px] top-[439px] text-3xl ">
                   Windows
                   <span className="text-white italic font-light">95</span>
                 </span>
@@ -83,7 +81,7 @@ export default function MainPage() {
           </div>
 
           {/* Desktop Icons */}
-          <div className="absolute top-4 left-4 laptop:grid laptop:grid-cols-2 sm:grid-cols-2 sm:grid sm:gap-2 gap-6 z-20">
+          <div className=" absolute top-4 left-4 laptop:grid laptop:grid-cols-2  sm:grid-cols-2 sm:grid sm:gap-2  gap-6 z-10">
             <DesktopIcon
               onClick={() => openWindow("education")}
               icon={MyComputer}
@@ -94,6 +92,7 @@ export default function MainPage() {
               icon={Gate}
               label="Projects.exe"
             />
+
             <DesktopIcon
               onClick={() => openWindow("about")}
               icon={Book}
@@ -114,56 +113,61 @@ export default function MainPage() {
               icon={WorkExperience}
               label="Experience.exe"
             />
+
+            {/* Windows */}
+            {openWindows.education && (
+              <Window
+                title="Education.exe"
+                onClose={() => closeWindow("education")}
+              >
+                <Education />
+              </Window>
+            )}
+
+            {openWindows.projects && (
+              <Window
+                title="Projects.exe"
+                onClose={() => closeWindow("projects")}
+              >
+                <Project />
+              </Window>
+            )}
+
+            {openWindows.about && (
+              <Window title="About.exe" onClose={() => closeWindow("about")}>
+                <About />
+              </Window>
+            )}
+
+            {openWindows.skill && (
+              <Window title="Skill.exe" onClose={() => closeWindow("skill")}>
+                <Skills />
+              </Window>
+            )}
+
+            {openWindows.connect && (
+              <Window
+                title="Connect.exe"
+                onClose={() => closeWindow("connect")}
+              >
+                <Connect />
+              </Window>
+            )}
+            {openWindows.experience && (
+              <Window
+                title="Experience.exe"
+                onClose={() => closeWindow("experience")}
+              >
+                <Experience />
+              </Window>
+            )}
+
+            {/* Footer with props */}
+            <Footer
+              onAppClick={openWindow}
+              // programs={programs}
+            />
           </div>
-
-          {/* Windows */}
-          {openWindows.education && (
-            <Window
-              title="Education.exe"
-              onClose={() => closeWindow("education")}
-            >
-              <Education />
-            </Window>
-          )}
-
-          {openWindows.projects && (
-            <Window
-              title="Projects.exe"
-              onClose={() => closeWindow("projects")}
-            >
-              <Project />
-            </Window>
-          )}
-
-          {openWindows.about && (
-            <Window title="About.exe" onClose={() => closeWindow("about")}>
-              <About />
-            </Window>
-          )}
-
-          {openWindows.skill && (
-            <Window title="Skill.exe" onClose={() => closeWindow("skill")}>
-              <Skills />
-            </Window>
-          )}
-
-          {openWindows.connect && (
-            <Window title="Connect.exe" onClose={() => closeWindow("connect")}>
-              <Connect />
-            </Window>
-          )}
-
-          {openWindows.experience && (
-            <Window
-              title="Experience.exe"
-              onClose={() => closeWindow("experience")}
-            >
-              <Experience />
-            </Window>
-          )}
-
-          {/* Footer */}
-          <Footer onAppClick={openWindow} />
         </div>
       )}
     </>

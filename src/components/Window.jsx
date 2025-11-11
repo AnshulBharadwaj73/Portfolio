@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Window = ({ title, children, onClose }) => {
   const ref = useRef(null);
-  const [position, setPosition] = useState({ x: 100, y: 100 });
+  const [position, setPosition] = useState({ x: 200, y: 200 });
 
   useEffect(() => {
     const handleCenter = () => {
