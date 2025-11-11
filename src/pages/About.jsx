@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../asset/an_img.JPG";
+import me from "../asset/an_img.jpg";
 
 export default function About() {
   return (
@@ -9,13 +9,11 @@ export default function About() {
           <div className="sm:h-[250px] sm:w-[300px] overflow-hidden absolute h-72 top-0 border-t-2 border-l-2 border-gray-300 border-b-4 border-r-4 border-b-gray-500 border-r-gray-500 bg-gray-300 shadow-md">
             <img
               src={me}
+              alt="Profile Pci"
               className="sm:h-[250px] sm:w-[300px] h-full w-full hover:scale-150 transition-all duration-0.05"
             ></img>
           </div>
-          <img
-            // src={happy}
-            className="absolute h-12  top-5 -left-1 -rotate-45"
-          ></img>
+
           {/* <img src={cherry} className="absolute h-14  bottom-5 -left-2 "></img> */}
           {/* <img src={bunny} className="absolute h-24  bottom-5 -right-2 "></img> */}
         </div>

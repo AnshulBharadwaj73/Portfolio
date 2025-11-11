@@ -29,6 +29,9 @@ export default function Skills() {
         autoPlay
         loop
         muted
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
+        playsInline
         className="absolute top-0 left-0 w-[700px] h-[400px] object-cover"
       >
         <source src={myVideo} type="video/mp4" />
